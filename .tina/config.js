@@ -25,6 +25,20 @@ const schema = defineSchema({
       },
     },
     {
+      label: "Markdown Content",
+      name: "md_page",
+      path: "content/markdown",
+      format: "md",
+      fields: [
+        {
+          name: "body",
+          label: "Main Content",
+          type: "rich-text",
+          isBody: true,
+        },
+      ],
+    },
+    {
       label: "Blog Posts",
       name: "post",
       path: "content/post",
