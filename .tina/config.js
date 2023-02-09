@@ -36,6 +36,21 @@ const schema = defineSchema({
           type: "rich-text",
           isBody: true,
         },
+        {
+          name: "requiredBool",
+          label: "Required boolean",
+          type: "boolean",
+          required: true,
+        },
+        {
+          name: "requiredString",
+          label: "Required string",
+          type: "string",
+          required: true,
+          ui: {
+            component: "textarea",
+          },
+        },
       ],
     },
     {
